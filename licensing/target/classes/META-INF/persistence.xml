@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="jpa-persistenceunit" transaction-type="JTA">
+    <jta-data-source>license_live</jta-data-source>
+    <class>com.franklin.licensing.entities.Customer</class>
+    <class>com.franklin.licensing.entities.Activation</class>
+    <class>com.franklin.licensing.entities.License</class>
+    <class>com.franklin.licensing.entities.Product</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties/>
+  </persistence-unit>
+</persistence>
